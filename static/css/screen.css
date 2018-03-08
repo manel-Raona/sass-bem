@@ -1,0 +1,181 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   Github: https://gist.github.com/hcatlin/1027867
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  font-size: 1em;
+  line-height: 1.33333;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0em;
+}
+
+h1 {
+  font-size: 2.4em;
+  line-height: 0.55556;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.41667em;
+  font-weight: bold;
+  color: #C10000;
+  margin-top: 1em;
+}
+
+h2 {
+  font-size: 2em;
+  line-height: 1.2;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.5em;
+  color: #C10000;
+}
+
+h3 {
+  font-size: 1.6em;
+  line-height: 1.25;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.625em;
+  color: #7F7F7F;
+}
+
+h4 {
+  font-size: 1em;
+  line-height: 1.33333;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 1em;
+  color: #7F7F7F;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.33333;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0.66667em;
+  color: #7F7F7F;
+}
+
+.list {
+  padding-left: 0.66667em;
+}
+
+.list .list__item {
+  margin-bottom: 0.66667em;
+  margin-right: 2em;
+}
+
+.list .list__item--inline {
+  display: inline-block;
+}
+
+.list .list__item--end {
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+.list--bullet {
+  list-style-type: disc;
+  padding-left: 1.66667em;
+}
+
+.list--number, .list--method {
+  counter-reset: items;
+  padding-top: 0.33333em;
+}
+
+.list--number .list__item, .list--method .list__item {
+  margin-bottom: 0.33333em;
+}
+
+.list--number .list__item:before, .list--method .list__item:before {
+  counter-increment: items;
+  content: counters(items, ".") ".";
+  color: #CC0000;
+  margin-right: 0.33333em;
+}
+
+.list--number .list__item--end, .list--method .list__item--end {
+  margin-bottom: 0;
+}
+
+.list--method .list__item {
+  margin-bottom: 1em;
+}
+
+.list--method .list__item:before {
+  font-size: 2em;
+  line-height: 1.2;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 0em;
+  font-style: italic;
+}
+
+.list--method .list__item--end {
+  margin-bottom: 0;
+}
+
+.layout {
+  padding: 1.66667em;
+  box-sizing: border-box;
+}
+
+.layout .container {
+  box-sizing: border-box;
+}
+
+.layout .container .container__legend {
+  box-sizing: border-box;
+  width: 50%;
+  float: left;
+  padding: 0.66667em;
+  margin-bottom: 1.33333em;
+}
+
+.layout .container .container__legend--left {
+  border-bottom: 2px solid red;
+}
+
+.layout .container .container__legend--right {
+  border-bottom: 2px solid blue;
+}
+
+.article {
+  background-color: #f8f8f8;
+}

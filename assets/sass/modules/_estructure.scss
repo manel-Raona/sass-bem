@@ -1,0 +1,28 @@
+
+.layout{
+	padding: calc-em(25);
+	box-sizing: border-box;
+	
+	.container{
+		box-sizing: border-box;
+		.container__legend{
+			box-sizing: border-box;
+			width: 50%;
+			float: left;
+			padding: calc-em(10);
+			margin-bottom: calc-em(20);
+		}
+
+		.container__legend--left{
+			border-bottom: 2px solid red;
+		}
+
+		.container__legend--right{
+			border-bottom: 2px solid blue;
+		}
+	}	
+}
+
+.article{
+	background-color: #f8f8f8;
+}
