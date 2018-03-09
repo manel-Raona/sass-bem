@@ -1,0 +1,35 @@
+/* mixins */
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius:    $radius
+  -ms-border-radius:     $radius
+  border-radius:         $radius
+
+
+
+/* structure */
+.layout
+	padding: calc-em(25)
+	box-sizing: border-box
+	
+	.container	
+		+border-radius(3px)
+		background-color:#ddd
+		padding: calc-em(20)
+		.container__legend
+			box-sizing: border-box
+			width: 50%
+			float: left
+			padding: calc-em(10)
+			margin-bottom: calc-em(20)
+			background-color: $color__neutral--dark
+
+		.article
+			background-color: $color__neutral--light
+			margin-top: calc-em(20)
+			padding: calc-em(15)
+			border-top: 2px solid $color__primary--dark
+			
+		
+
